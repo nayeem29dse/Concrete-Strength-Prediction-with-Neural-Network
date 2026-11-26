@@ -107,8 +107,7 @@ The deployment model is retrained on all 1030 rows. Its expected accuracy is the
 - The CV experiments used 3-net ensembles. The final 5-net cosine configuration was evaluated on the held-out test split, not re-run through CV, so expect it to be similar to or marginally better than the 4.31 figure.
 - The engineered-feature contribution was not isolated in a saved ablation.
 
-## 5. What I would do next
+## 5. What next can be done
 
-- Run a controlled 8-vs-10 feature CV ablation.
 - Try gradient-boosted trees (XGBoost/LightGBM) as a strong tabular baseline.
 - Collect or merge more data, since variance and noise, not model design, limit accuracy now.
