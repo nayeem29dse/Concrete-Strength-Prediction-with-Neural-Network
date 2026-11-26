@@ -111,3 +111,9 @@ The deployment model is retrained on all 1030 rows. Its expected accuracy is the
 
 - Try gradient-boosted trees (XGBoost/LightGBM) as a strong tabular baseline.
 - Collect or merge more data, since variance and noise, not model design, limit accuracy now.
+
+## Author
+
+**Mehedee Hasan Nyeem**
+
+**Data Science Student**
