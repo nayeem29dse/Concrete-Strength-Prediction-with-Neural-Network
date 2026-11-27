@@ -25,7 +25,7 @@ Implemented `y = XW + b`, MSE loss and gradient descent manually with autograd.
 
 **Finding:** train and test are close, so this is **underfitting**, not overfitting. Strength depends nonlinearly on the inputs (age saturates, water/cement interactions), and a straight line can't capture that.
 
-### Step 2: Neural network (8 → 64 → 32 → 1, ReLU, Adam)
+### Step 2: Neural network (8 → 64 → 32 → 1, ReLU, Adam).
 Test RMSE dropped to **5.35 MPa** (R² 0.890) after 1000 epochs, with train RMSE 3.69. Test loss bottomed out around epoch 650 and then crept up, which is mild overfitting.
 
 **Mistake caught:** my first "1000-epoch" run actually continued training an already-trained network (the model and optimizer cell wasn't re-run), so the epoch-0 loss was 26 instead of about 1500. From then on, model, optimizer and loop live in one cell, so every run starts fresh.
